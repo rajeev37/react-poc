@@ -1,21 +1,22 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import SwitchComponent from '../routes';
+import { navBar, theadDesign } from '../util/constant-class';
 
 const HeaderComponent = () => (
     <div>
-        {/* <nav className="navbar navbar-inverse">
-            <ul className="nav navbar-nav">
-                <li>
-                    <Link to="/">Home</Link>
+        <nav className="navbar" style={navBar}>
+            <ul className="nav navbar-nav" style={theadDesign}>
+                <li >
+                    <Link to="/" style={{ "color": "white" }}>Home</Link>
                 </li>
                 <li>
-                    <Link to="/login">Login</Link>
+                    <Link to="/search" style={{ "color": "white" }}>Search</Link>
                 </li>
             </ul>
-        </nav> */}
+        </nav>
         {SwitchComponent}
-    </div>
+    </div >
 );
 
 export default HeaderComponent;

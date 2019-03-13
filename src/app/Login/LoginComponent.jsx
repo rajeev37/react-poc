@@ -58,7 +58,7 @@ class LoginComponent extends Component {
                         <Select autosize={false} id="drpState" name="drpState" className="selectDesign selectpicker show-tick show-menu-arrow"
                             data-width="auto" placeholder="Select State" data-size="10" options={this.stateData} value={this.state.stateOption} onChange={this.stateChange}>
                         </Select>
-                        <h1 className="text-info">Sample Replcae call(Post)</h1>
+                        <h1 className="text-info">Sample Replace call(Post)</h1>
                         <Button
                             block
                             disabled={false}

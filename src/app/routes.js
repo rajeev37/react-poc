@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Loadable from 'react-loadable';
+import Search from './SearchPage/Search';
 
 // import HomeComponent from './Home/HomeComponent';
 
@@ -13,7 +14,7 @@ const LoginComponent = Loadable({
 export default (
     <Switch>
         <Route exact path="/" component={LoginComponent} />
-        {/* <Route path="/login" component={LoginComponent} /> */}
+        <Route path="/search" component={Search} />
         <Route path="**" render={() => (
             <article>
                 <h1 className="text-danger">Component Not Found...</h1>
