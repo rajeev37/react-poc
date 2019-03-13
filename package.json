@@ -4,7 +4,7 @@
   "description": "Simple React Application",
   "private": true,
   "scripts": {
-    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server --hot --env dev --https --cert node.pem --key node.key"
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --env dev --https --cert node.pem --key node.key"
   },
   "author": "Manish Sharma",
   "license": "ISC",
@@ -25,7 +25,7 @@
     "script-loader": "^0.7.2",
     "webpack-dev-middleware": "^3.6.1",
     "webpack-hot-middleware": "^2.24.3",
-    "webpack":"^4.29.6"
+    "webpack": "^4.29.6"
   },
   "devDependencies": {
     "@babel/plugin-proposal-object-rest-spread": "7.0.0",
