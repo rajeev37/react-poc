@@ -76,8 +76,6 @@ module.exports = webpackMerge(commonConfig, {
         inline: true,
         historyApiFallback: true,
         contentBase: './dist',
-        host: 'ddlocal.deltadev.ent',
-        port: 3000,
         clientLogLevel: 'none',
         stats: 'minimal',
         open: 'Chrome'
