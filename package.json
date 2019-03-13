@@ -4,7 +4,7 @@
   "description": "Simple React Application",
   "private": true,
   "scripts": {
-    "start": "npm i -g webpack && webpack-dev-server --hot --env dev --https --cert node.pem --key node.key"
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --env dev --https --cert node.pem --key node.key"
   },
   "author": "Manish Sharma",
   "license": "ISC",
@@ -25,7 +25,10 @@
     "script-loader": "^0.7.2",
     "webpack-dev-middleware": "^3.6.1",
     "webpack-hot-middleware": "^2.24.3",
-    "webpack": "^4.29.6"
+    "webpack": "4.26.1",
+    "webpack-cli": "3.1.2",
+    "webpack-dev-server": "3.1.10",
+    "webpack-merge": "4.1.4"
   },
   "devDependencies": {
     "@babel/plugin-proposal-object-rest-spread": "7.0.0",
@@ -48,10 +51,6 @@
     "sass-loader": "7.1.0",
     "style-loader": "0.23.1",
     "terser-webpack-plugin": "1.1.0",
-    "url-loader": "1.1.2",
-    "webpack": "4.26.1",
-    "webpack-cli": "3.1.2",
-    "webpack-dev-server": "3.1.10",
-    "webpack-merge": "4.1.4"
+    "url-loader": "1.1.2"
   }
 }
