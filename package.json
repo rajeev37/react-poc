@@ -41,9 +41,7 @@
     "css-loader": "1.0.1",
     "file-loader": "2.0.0",
     "terser-webpack-plugin": "1.1.0",
-    "url-loader": "1.1.2"
-  },
-  "devDependencies": {
+    "url-loader": "1.1.2",
     "@babel/plugin-proposal-object-rest-spread": "7.0.0",
     "autoprefixer": "9.3.1",
     "babel-core": "6.26.3",
@@ -52,5 +50,6 @@
     "babel-preset-env": "1.7.0",
     "babel-preset-react": "6.24.1",
     "babel-preset-stage-2": "6.24.1"
-  }
+  },
+ 
 }
