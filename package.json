@@ -4,7 +4,7 @@
   "description": "Simple React Application",
   "private": true,
   "scripts": {
-    "start": "node ../node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --env dev --https --cert node.pem --key node.key"
+    "start": "npm i -g webpack && webpack-dev-server --hot --env dev --https --cert node.pem --key node.key"
   },
   "author": "Manish Sharma",
   "license": "ISC",
