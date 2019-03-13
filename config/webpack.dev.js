@@ -78,7 +78,6 @@ module.exports = webpackMerge(commonConfig, {
         contentBase: './dist',
         clientLogLevel: 'none',
         stats: 'minimal',
-        open: 'Chrome'
     },
     plugins: [
         new MiniCssExtractPlugin({
