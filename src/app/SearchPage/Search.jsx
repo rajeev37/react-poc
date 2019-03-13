@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Button } from "react-bootstrap";
-require('es6-promise').polyfill();
-require('isomorphic-fetch');
+// require('es6-promise').polyfill();
+// require('isomorphic-fetch');
 import { replicate } from '../services/authAPIService';
 import fetchData from "../services/fetchData";
 import searchProduct from "../services/searchProduct"
