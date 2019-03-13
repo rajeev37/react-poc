@@ -69,11 +69,12 @@ module.exports = webpackMerge(commonConfig, {
     output: {
         publicPath: '/',
         filename: 'bundle.js',
-        path: __dirname+'/dist'
+        path: __dirname + '/dist'
     },
 
     devServer: {
         inline: true,
+        historyApiFallback: true,
         contentBase: './dist',
         host: 'ddlocal.deltadev.ent',
         port: 3000,

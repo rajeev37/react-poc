@@ -37,7 +37,7 @@ export default function authenticator() {
         }
     };
     const url = BASE_URL;
-    console.log("BSAE URL ", url);
+    console.log("BASE URL ", url);
     return fetch(`${BASE_URL}/pad/states`, fData).then((response) => {
         return response.json().then((data) => {
             if (!response.ok && response.status !== 401) {
