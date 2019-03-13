@@ -73,17 +73,15 @@ module.exports = webpackMerge(commonConfig, {
 
     output: {
         path: paths.appBuildPath,
-        publicPath: './dist',
-        filename: 'static/js/[name].[chunkhash:8].js',
-        chunkFilename: 'static/js/[name].[chunkhash:8].chunk.js'
+        filename: 'bundle.js'
     },
 
     plugins: [
         new CleanWebpackPlugin(['dist'], { root: paths.appRootPath }),
-        new MiniCssExtractPlugin({
-            filename: 'static/css/[name].[contenthash:8].css',
-            chunkFilename: 'static/css/[name].[contenthash:8].chunk.css'
-        })
+        // new MiniCssExtractPlugin({
+        //     filename: 'static/css/[name].[contenthash:8].css',
+        //     chunkFilename: 'static/css/[name].[contenthash:8].chunk.css'
+        // })
     ],
 
     optimization: {
