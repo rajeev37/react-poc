@@ -77,7 +77,7 @@ module.exports = webpackMerge(commonConfig, {
         historyApiFallback: true,
         contentBase: './dist',
         clientLogLevel: 'none',
-        port: process.env.port || 8080,
+        port: process.env.PORT,
         stats: 'minimal',
     },
     plugins: [
