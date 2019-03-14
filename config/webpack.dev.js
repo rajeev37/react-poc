@@ -80,6 +80,7 @@ module.exports = webpackMerge(commonConfig, {
         host:'0.0.0.0',
         port: process.env.PORT,
         stats: 'minimal',
+        disableHostCheck: true
     },
     plugins: [
         new MiniCssExtractPlugin({
