@@ -1,19 +1,19 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Loadable from 'react-loadable';
+// import Loadable from 'react-loadable';
 import Search from './SearchPage/Search';
 
-// import HomeComponent from './Home/HomeComponent';
+import HomeComponent from './Home/HomeComponent';
 
 
-const LoginComponent = Loadable({
-    loader: () => import('./Login/LoginComponent'),
-    loading: () => <div>Loading....</div>
-});
+// const LoginComponent = Loadable({
+//     loader: () => import('./Login/LoginComponent'),
+//     loading: () => <div>Loading....</div>
+// });
 
 export default (
     <Switch>
-        <Route exact path="/" component={LoginComponent} />
+        <Route exact path="/" component={HomeComponent} />
         <Route path="/search" component={Search} />
         <Route path="**" render={() => (
             <article>
