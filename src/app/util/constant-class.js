@@ -429,7 +429,9 @@ export const divCopaywidth = {
 export const theadDesign = {
     color: "white",
     // backgroundImage: 'url("static/images/thead.jpg")'
-    backgroundColor: "#311441"
+    backgroundColor: "#311441",
+    listStyle: "none",
+    marginBlockStart: "0",
 };
 
 export const padBtn = {

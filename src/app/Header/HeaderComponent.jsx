@@ -7,16 +7,16 @@ const HeaderComponent = () => (
     <div>
         <nav className="navbar" style={navBar}>
             <ul className="nav navbar-nav" style={theadDesign}>
-                <li >
+                <li style={{ "display": "inline-block" }}>
                     <Link to="/" style={{ "color": "white" }}>Home</Link>
                 </li>
-                <li>
+                <li style={{ "display": "inline-block", "marginLeft": "15px" }}>
                     <Link to="/search" style={{ "color": "white" }}>Search</Link>
                 </li>
             </ul>
         </nav>
         {SwitchComponent}
-    </div >
+    </div>
 );
 
 export default HeaderComponent;
