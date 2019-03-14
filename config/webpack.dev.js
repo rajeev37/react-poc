@@ -77,7 +77,7 @@ module.exports = webpackMerge(commonConfig, {
         historyApiFallback: true,
         contentBase: './dist',
         clientLogLevel: 'none',
-        host:'https://protected-shore-51945.herokuapp.com',
+        host:'0.0.0.0',
         port: process.env.PORT,
         stats: 'minimal',
     },
